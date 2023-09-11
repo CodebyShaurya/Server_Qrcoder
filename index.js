@@ -8,11 +8,8 @@ const knex = require('knex')
 const db=knex({
     client: 'pg',
     connection: {
-      host : '127.0.0.1',
-      port : 5432,
-      user : 'postgres',
-      password : 'shauryagupta',
-      database : 'qrcoder'
+        connectionString: "postgres://default:XmW1GFKgA6jr@ep-royal-surf-42372665-pooler.us-east-1.postgres.vercel-storage.com:5432/verceldb?sslmode=require",
+        ssl:true
     }
   });
 
